@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+        <div style="margin: 10px auto; width: 600px;">
+            <h2>Ovo je najsigurniji i najbrzi Corona Test</h2>
+
+            <p>Ako zelis da saznas resenje svog testa</p>
+
+            <button onclick="test()">KLIKNI OVDE!</button>
+
+            <p id="resenje"></p>
+        </div>
+    <script>
+        function test () {
+        var coronaTest = Math.random();
+
+        if (coronaTest > 0.5) {
+            document.getElementById("resenje").innerHTML = "Pozitivan";
+        }
+
+        else {
+            document.getElementById("resenje").innerHTML = "Negativan";
+        }
+    
+    }
+    </script>
+</body>
+</html>
+
+
